@@ -2,7 +2,7 @@ var servicelist={
 	admin:{
 		url:"https://mapservice.gov.in/gismapservice/rest/services/BharatMapService/Admin_Boundary_Village/MapServer",
 		token:"D2h7FO-jerNZxqI_5w17lpkwt5aeVo7cDxfrebNPl11xzcvJHcdtyEsSi6Q1Ryn6"
-	}
+	},
 	basemaps:[
 		{
 			url:"https://services.arcgisonline.com/arcgis/rest/services/World_Street_Map/MapServer",
