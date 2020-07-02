@@ -5,8 +5,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>NIC Map</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://js.arcgis.com/3.32/dijit/themes/claro/claro.css">    
 		<link rel="stylesheet" href="https://js.arcgis.com/3.32/esri/css/esri.css"/>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<style>
 		  html, body, #mapDiv{
 			padding: 0;
@@ -19,14 +21,22 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row">
-				<select id="statedd"></select>
+				<select id="statedd"></select><select id="districtdd"></select><select id="blockdd"></select>
+				<button id="basemap_btn">BASEMAPS</button>
 			</div>
 			<div class="row">
-				<div id="mapDiv"></div>
+				<div id="mapDiv">
+					
+				</div>
 			</div>
 		</div>
+		<div id="dialog" title="Details" style="display:none">
+		
+		</div>
+		<div id="basemaps" title="Basemap Gallery" style="display:none"><div id="basemapGallery"></div></div>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<script src="https://js.arcgis.com/3.32/"></script>
 	<script src="js/config.js"></script>

@@ -23,7 +23,7 @@ var servicelist={
 			title:"ESRI Imagery",
 			defaultenable:false,
 			opacity:1,
-			thumbnailUrl:"images/basemapimages/Satellite.png"
+			thumbnailUrl:"images/basemapimages/NIC_Street.png"
 		}
 	]
 };
